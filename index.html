@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi amor</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Contenedor principal del mensaje */
+        .card {
+            position: relative;
+            z-index: 2;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff6b6b;
+            font-size: 2em;
+        }
+
+        p {
+            color: #333;
+            font-size: 1.2em;
+        }
+
+        .heart {
+            font-size: 3em;
+            color: #ff6b6b;
+            animation: heartbeat 1.5s ease-in-out infinite;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        /* Estilos para las palabras flotantes */
+        .floating-word {
+            position: absolute;
+            color: rgba(255, 107, 107, 0.1); /* Color muy suave */
+            font-size: 2rem;
+            animation: float 10s forwards;
+            z-index: 1;
+            user-select: none;
+            transform-origin: center;
+        }
+
+        @keyframes float {
+            0% { 
+                transform: translateY(calc(100vh - 50%)) translateX(calc(-50vw + 50%)) scale(1);
+            }
+            50% { 
+                transform: translateY(calc(-50vh + 50%)) translateX(calc(50vw - 50%)) scale(1.5);
+            }
+            100% { 
+                transform: translateY(calc(0vh - 50%)) translateX(calc(0vw - 50%)) scale(0.5);
+            }
+        }
+
+        /* Corazón grande en el centro */
+        .heart-shape {
+            position: absolute;
+            color: rgba(255, 107, 107, 0.2);
+            font-size: 15rem;
+            z-index: 0;
+            text-align: center;
+            animation: heart-shape 15s ease-in-out infinite;
+        }
+
+        @keyframes heart-shape {
+            0% { transform: scale(1); opacity: 0; }
+            50% { transform: scale(6); opacity: 1; }
+            100% { transform: scale(10); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Elementos flotantes de "Shayna" -->
+    <div class="heart-shape">❤️</div>
+    <!-- Generar 50 palabras "Shayna" con animaciones diferentes -->
+    <div class="floating-word" style="top: 10%; left: 10%; animation-delay: 0s;">Shayna</div>
+    <div class="floating-word" style="top: 10%; left: 30%; animation-delay: 1s;">Shayna</div>
+    <div class="floating-word" style="top: 10%; left: 50%; animation-delay: 2s;">Shayna</div>
+    <div class="floating-word" style="top: 10%; left: 70%; animation-delay: 3s;">Shayna</div>
+    <div class="floating-word" style="top: 30%; left: 10%; animation-delay: 4s;">Shayna</div>
+    <div class="floating-word" style="top: 30%; left: 30%; animation-delay: 5s;">Shayna</div>
+    <div class="floating-word" style="top: 30%; left: 50%; animation-delay: 6s;">Shayna</div>
+    <div class="floating-word" style="top: 30%; left: 70%; animation-delay: 7s;">Shayna</div>
+    <div class="floating-word" style="top: 50%; left: 10%; animation-delay: 8s;">Shayna</div>
+    <div class="floating-word" style="top: 50%; left: 30%; animation-delay: 9s;">Shayna</div>
+    <div class="floating-word" style="top: 50%; left: 50%; animation-delay: 10s;">Shayna</div>
+    <div class="floating-word" style="top: 50%; left: 70%; animation-delay: 11s;">Shayna</div>
+    <div class="floating-word" style="top: 70%; left: 10%; animation-delay: 12s;">Shayna</div>
+    <div class="floating-word" style="top: 70%; left: 30%; animation-delay: 13s;">Shayna</div>
+    <div class="floating-word" style="top: 70%; left: 50%; animation-delay: 14s;">Shayna</div>
+    <div class="floating-word" style="top: 70%; left: 70%; animation-delay: 15s;">Shayna</div>
+    <div class="floating-word" style="top: 90%; left: 10%; animation-delay: 16s;">Shayna</div>
+    <div class="floating-word" style="top: 90%; left: 30%; animation-delay: 17s;">Shayna</div>
+    <div class="floating-word" style="top: 90%; left: 50%; animation-delay: 18s;">Shayna</div>
+    <div class="floating-word" style="top: 90%; left: 70%; animation-delay: 19s;">Shayna</div>
+    <div class="floating-word" style="top: 50%; left: 90%; animation-delay: 20s;">Shayna</div>
+    <div class="floating-word" style="top: 30%; left: 90%; animation-delay: 21s;">Shayna</div>
+    <div class="floating-word" style="top: 10%; left: 90%; animation-delay: 22s;">Shayna</div>
+    <div class="floating-word" style="top: 70%; left: 90%; animation-delay: 23s;">Shayna</div>
+    <div class="floating-word" style="top: 90%; left: 90%; animation-delay: 24s;">Shayna</div>
+    <div class="floating-word" style="top: 10%; left: 50%; animation-delay: 25s;">Shayna</div>
+    <div class="floating-word" style="top: 30%; left: 50%; animation-delay: 26s;">Shayna</div>
+    <div class="floating-word" style="top: 50%; left: 50%; animation-delay: 27s;">Shayna</div>
+    <div class="floating-word" style="top: 70%; left: 50%; animation-delay: 28s;">Shayna</div>
+    <div class="floating-word" style="top: 90%; left: 50%; animation-delay: 29s;">Shayna</div>
+    <div class="floating-word" style="top: 20%; left: 20%; animation-delay: 30s;">Shayna</div>
+    <div class="floating-word" style="top: 20%; left: 80%; animation-delay: 31s;">Shayna</div>
+    <div class="floating-word" style="top: 80%; left: 20%; animation-delay: 32s;">Shayna</div>
+    <div class="floating-word" style="top: 80%; left: 80%; animation-delay: 33s;">Shayna</div>
+    <div class="floating-word" style="top: 40%; left: 20%; animation-delay: 34s;">Shayna</div>
+    <div class="floating-word" style="top: 60%; left: 20%; animation-delay: 35s;">Shayna</div>
+    <div class="floating-word" style="top: 20%; left: 40%; animation-delay: 36s;">Shayna</div>
+    <div class="floating-word" style="top: 60%; left: 40%; animation-delay: 37s;">Shayna</div>
+    <div class="floating-word" style="top: 20%; left: 60%; animation-delay: 38s;">Shayna</div>
+    <div class="floating-word" style="top: 60%; left: 60%; animation-delay: 39s;">Shayna</div>
+    <div class="floating-word" style="top: 20%; left: 80%; animation-delay: 40s;">Shayna</div>
+    <div class="floating-word" style="top: 60%; left: 80%; animation-delay: 41s;">Shayna</div>
+
+    <!-- Mensaje principal -->
+    <div class="card">
+        <h1>Feliz Día del Contador, Shayna!</h1>
+        <p>Mi amor, no solo cuentas números, sino también los momentos felices que compartimos. Eres el balance perfecto en mi vida. Te amo.</p>
+        <div class="heart">❤️</div>
+    </div>
+</body>
+</html>
