@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Para mi amor</title>
     <style>
+        /* Reset de estilo básico para mantener la consistencia */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             background-color: #f5f5f5;
             font-family: 'Arial', sans-serif;
@@ -25,22 +32,27 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             padding: 20px;
-            max-width: 400px;
+            max-width: 90%; /* Ajuste responsivo */
             text-align: center;
+            /* Asegura que el contenedor se mantenga en el centro */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         h1 {
             color: #ff6b6b;
-            font-size: 2em;
+            font-size: 2.5rem; /* Se ajusta mejor a cualquier pantalla */
         }
 
         p {
             color: #333;
-            font-size: 1.2em;
+            font-size: 1.2rem; /* Tamaño adecuado para lectura en móviles */
         }
 
         .heart {
-            font-size: 3em;
+            font-size: 4rem; /* Ajuste de tamaño del corazón */
             color: #ff6b6b;
             animation: heartbeat 1.5s ease-in-out infinite;
         }
@@ -55,7 +67,7 @@
         .floating-word {
             position: absolute;
             color: rgba(255, 107, 107, 0.1); /* Color muy suave */
-            font-size: 2rem;
+            font-size: 2.5vw; /* Se ajusta en base al ancho de la pantalla */
             animation: float 10s forwards;
             z-index: 1;
             user-select: none;
@@ -78,7 +90,7 @@
         .heart-shape {
             position: absolute;
             color: rgba(255, 107, 107, 0.2);
-            font-size: 15rem;
+            font-size: 20vw; /* Ajuste responsivo del tamaño del corazón */
             z-index: 0;
             text-align: center;
             animation: heart-shape 15s ease-in-out infinite;
@@ -88,6 +100,34 @@
             0% { transform: scale(1); opacity: 0; }
             50% { transform: scale(6); opacity: 1; }
             100% { transform: scale(10); opacity: 0; }
+        }
+
+        /* Media Queries para dispositivos móviles */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8rem; /* Ajuste del título en pantallas pequeñas */
+            }
+
+            p {
+                font-size: 1rem; /* Ajuste del texto en pantallas pequeñas */
+            }
+
+            .heart {
+                font-size: 3rem; /* Ajuste del tamaño del corazón */
+            }
+
+            .floating-word {
+                font-size: 4vw; /* Palabras más grandes en pantallas pequeñas */
+            }
+
+            .heart-shape {
+                font-size: 35vw; /* Corazón más grande en móviles */
+            }
+
+            .card {
+                padding: 15px;
+                max-width: 95%; /* Asegura que el mensaje se vea bien en móviles */
+            }
         }
     </style>
 </head>
@@ -137,6 +177,10 @@
     <div class="floating-word" style="top: 60%; left: 60%; animation-delay: 39s;">Shayna</div>
     <div class="floating-word" style="top: 20%; left: 80%; animation-delay: 40s;">Shayna</div>
     <div class="floating-word" style="top: 60%; left: 80%; animation-delay: 41s;">Shayna</div>
+    <div class="floating-word" style="top: 40%; left: 80%; animation-delay: 42s;">Shayna</div>
+    <div class="floating-word" style="top: 20%; left: 50%; animation-delay: 43s;">Shayna</div>
+    <div class="floating-word" style="top: 60%; left: 50%; animation-delay: 44s;">Shayna</div>
+    <div class="floating-word" style="top: 40%; left: 50%; animation-delay: 45s;">Shayna</div>
 
     <!-- Mensaje principal -->
     <div class="card">
